@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Filter App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Product Explorer</h1>
+
+  <div class="filters">
+    <input type="text" id="searchInput" placeholder="Search products">
+
+    <select id="categoryFilter">
+      <option value="all">All Categories</option>
+      <option value="Electronics">Electronics</option>
+      <option value="Clothing">Clothing</option>
+      <option value="Books">Books</option>
+    </select>
+
+    <select id="brandFilter">
+      <option value="all">All Brands</option>
+      <option value="Apple">Apple</option>
+      <option value="Dell">Dell</option>
+      <option value="Nike">Nike</option>
+      <option value="Samsung">Samsung</option>
+      <option value="Penguin">Penguin</option>
+    </select>
+
+    <input type="number" id="minPrice" placeholder="Min Price">
+
+    <input type="number" id="maxPrice" placeholder="Max Price">
+
+    <select id="ratingFilter">
+      <option value="0">All Ratings</option>
+      <option value="4">4+ Rating</option>
+      <option value="4.5">4.5+ Rating</option>
+    </select>
+
+    <select id="sortBy">
+      <option value="">Sort By</option>
+      <option value="priceLow">Price Low → High</option>
+      <option value="priceHigh">Price High → Low</option>
+      <option value="name">Name A → Z</option>
+      <option value="rating">Highest Rating</option>
+    </select>
+
+    <label>
+      <input type="checkbox" id="inStockOnly">
+      In Stock
+    </label>
+
+    <label>
+      <input type="checkbox" id="discountOnly">
+      Discount
+    </label>
+  </div>
+
+  <div class="stats">
+    <div id="productCount"></div>
+    <div id="inventoryValue"></div>
+    <div id="totalStock"></div>
+    <div id="averageRating"></div>
+  </div>
+
+  <div id="productList" class="products"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
