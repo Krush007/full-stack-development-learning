@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure and Cache Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Closure and Cache (Memoization)</h1>
+
+        <section class="card">
+            <h2>Counter Using Closure</h2>
+
+            <button id="counterBtn">Increment Counter</button>
+
+            <div class="value">
+                Current Count:
+                <span id="counterValue">0</span>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Square Calculator With Cache</h2>
+
+            <div class="input-group">
+                <input
+                    type="number"
+                    id="numberInput"
+                    placeholder="Enter a number"
+                >
+                <button id="calculateBtn">Calculate Square</button>
+            </div>
+
+            <div class="result">
+                Result:
+                <span id="resultValue">-</span>
+            </div>
+
+            <h3>Hit / Miss Order</h3>
+            <ol id="eventList"></ol>
+
+            <h3>Cache Content</h3>
+            <pre id="cacheContent">{}</pre>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
